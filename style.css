@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    height: 95vh;
+    background-color: rgb(18, 18, 18);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "display display display display display" "display display display display display" "num7 num8 num9 icon div" "num4 num5 num6 plusormin multi" "num1 num2 num3 mod min" "ac num0 dot  equal plus";
+    gap: 15px 15px;
+    margin: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+#display {
+    grid-area: display;
+    width: 80%;
+    text-align: right;
+    border: none;
+    overflow: hidden;
+    background-color: rgb(42, 42, 44);
+    color: white;
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: 'SF Pro Display', sans-serif;
+    border-radius: 40px;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+#display:hover{
+    grid-area: display;
+    width: 80%;
+    text-align: right;
+    border: none;
+    overflow: hidden;
+    background-color: rgb(92, 92, 95);
+    color: white;
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: 'SF Pro Display', sans-serif;
+    border-radius: 40px;
+    padding-left: 5%;
+    padding-right: 15%;
+    transition: 1.2s;
+}
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 2%;
+    }
+}
+button {
+    color: white;
+    font-family: 'SF Pro Display', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    color: rgb(42, 42, 44);
+    font-family: 'SF Pro Display', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+}
+.num9 {
+    grid-area: num9;
+    color: white;
+    background-color: rgb(42, 42, 44);
+    border-color: transparent;
+    border-radius: 100px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num8 {
+    grid-area: num8;
+    color: white;
+    background-color: rgb(42, 42, 44);
+    border-color: transparent;
+    border-radius: 100px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num7 {
+    grid-area: num7;
+    background-color: rgb(42, 42, 44);
+}
+.num6 {
+    grid-area: num6;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.num5 {
+    grid-area: num5;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.num4 {
+    grid-area: num4;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.num3 {
+    grid-area: num3;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.num2 {
+    grid-area: num2;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.num1 {
+    grid-area: num1;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.num0 {
+    grid-area: num0;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.icon {
+    grid-area: icon;
+    color: white;
+    background-color: rgb(92, 92, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon img:hover{
+    color: rgb(92, 92, 95);
+}
+.dot {
+    grid-area: dot;
+    color: white;
+    background-color: rgb(42, 42, 44);
+}
+.ac {
+    grid-area: ac;
+    color: white;
+    background-color: rgb(92, 92, 95);
+}
+.ac:hover{
+    grid-area: ac;
+    color: rgb(92, 92, 95);
+    background-color: white;
+}
+.plusormin {
+    grid-area: plusormin;
+    color: white;
+    background-color: rgb(92, 92, 95);
+}
+.plusormin:hover{
+    grid-area: plusormin;
+    color: rgb(92, 92, 95);
+    background-color: white;
+}
+.mod {
+    grid-area: mod;
+    color: white;
+    background-color: rgb(92, 92, 95);
+}
+.mod:hover{
+    grid-area: mod;
+    color: rgb(92, 92, 95);
+    background-color: white;
+}
+.div {
+    grid-area: div;
+    color: white;
+    background-color: rgb(255, 159, 10);
+}
+.div:hover {
+    grid-area: div;
+    color: rgb(255, 159, 10);
+    background-color: white;
+}
+.multi {
+    grid-area: multi;
+    color: white;
+    background-color: rgb(255, 159, 10);
+}
+.multi:hover {
+    grid-area: multi;
+    color: rgb(255, 159, 10);
+    background-color: white;
+}
+.min {
+    grid-area: min;
+    color: white;
+    background-color: rgb(255, 159, 10);
+}
+.min:hover {
+    grid-area: min;
+    color: rgb(255, 159, 10);
+    background-color: white;
+}
+.plus {
+    grid-area: plus;
+    color: white;
+    background-color: rgb(255, 159, 10);
+}
+.plus:hover {
+    grid-area: plus;
+    color: rgb(255, 159, 10);
+    background-color: white;
+}
+.equal {
+    grid-area: equal;
+    color: white;
+    background-color: rgb(255, 159, 10);
+}
+.equal:hover {
+    grid-area: equal;
+    color: rgb(255, 159, 10);
+    background-color: white;
+}
